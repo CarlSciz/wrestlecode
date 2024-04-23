@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+body {
+  background-color: #547aaa;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Wrestlemania';
+    src: url('./assets/WRESTLEMANIA.ttf'); 
+  }
+}
