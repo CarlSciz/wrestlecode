@@ -9,11 +9,6 @@
 
 <body>
 <head>
-  <style>
-    body {
-      text-align: center;
-    }
-  </style>
   <body>
   A website built from passion of Wrestling with Code in a squared circle.
   <br>
