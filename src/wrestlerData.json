@@ -1,0 +1,502 @@
+[
+  {
+    "gimmick": "Undertaker",
+    "birthplace": "Houston, Texas, USA",
+    "promotion": "208"
+  },
+  {
+    "gimmick": "John Cena",
+    "birthplace": "West Newbury, Massachusetts, USA",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "CM Punk",
+    "birthplace": "Chicago, Illinois, USA",
+    "promotion": "183"
+  },
+  {
+    "gimmick": "Bryan Danielson",
+    "birthplace": "Aberdeen, Washington, USA",
+    "promotion": "173"
+  },
+  {
+    "gimmick": "Chris Jericho",
+    "birthplace": "Manhasset, New York, USA",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "Shawn Michaels",
+    "birthplace": "Chandler, Arizona, USA",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "AJ Styles",
+    "birthplace": "Jacksonville, North Carolina, USA",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "Adam Copeland",
+    "birthplace": "Orangeville, Ontario, Canada",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "Randy Orton",
+    "birthplace": "Knoxville, Tennessee, USA",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "Triple H",
+    "birthplace": "Nashua, New Hampshire, USA",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "The Miz",
+    "birthplace": "Parma, Ohio, USA",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Kenny Omega",
+    "birthplace": "Transcona, Manitoba, Canada",
+    "promotion": "183"
+  },
+  {
+    "gimmick": "The Rock",
+    "birthplace": "Hayward, California, USA",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "Roman Reigns",
+    "birthplace": "Pensacola, Florida, USA",
+    "promotion": "190"
+  },
+  {
+    "gimmick": "Claudio Castagnoli",
+    "birthplace": "Luzern, Schweiz",
+    "promotion": "195"
+  },
+  {
+    "gimmick": "Jeff Hardy",
+    "birthplace": "Cameron, North Carolina, USA",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Rey Mysterio",
+    "birthplace": "San Ysidro, California, USA",
+    "promotion": "162"
+  },
+  {
+    "gimmick": "Jon Moxley",
+    "birthplace": "Cincinnati, Ohio, USA",
+    "promotion": "188"
+  },
+  {
+    "gimmick": "Cody Rhodes",
+    "birthplace": "Charlotte, North Carolina, USA",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Kurt Angle",
+    "birthplace": "Pittsburgh, Pennsylvania, USA",
+    "promotion": "178"
+  },
+  {
+    "gimmick": "Seth Rollins",
+    "birthplace": "Buffalo, Iowa, USA",
+    "promotion": "187"
+  },
+  {
+    "gimmick": "Bret Hart",
+    "birthplace": "Calgary, Alberta, Canada",
+    "promotion": "183"
+  },
+  {
+    "gimmick": "Brock Lesnar",
+    "birthplace": "Webster, South Dakota, USA",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "Christian Cage",
+    "birthplace": "Kitchener, Ontario, Canada",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Steve Austin",
+    "birthplace": "Austin, Texas, USA",
+    "promotion": "188"
+  },
+  {
+    "gimmick": "Batista",
+    "birthplace": "Arlington, Virginia, USA",
+    "promotion": "196"
+  },
+  {
+    "gimmick": "Ric Flair",
+    "birthplace": "Memphis, Tennessee, USA",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "Kevin Owens",
+    "birthplace": "Saint-Jean-sur-Richelieu, Quebec, Canada",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "Kane",
+    "birthplace": "Madrid, Spanien",
+    "promotion": "208"
+  },
+  {
+    "gimmick": "Hulk Hogan",
+    "birthplace": "Augusta, Georgia, USA",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "Kazuchika Okada",
+    "birthplace": "Anjo, Aichi, Japan",
+    "promotion": "191"
+  },
+  {
+    "gimmick": "Samoa Joe",
+    "birthplace": "Orange County, California, USA",
+    "promotion": "183"
+  },
+  {
+    "gimmick": "Eddie Guerrero",
+    "birthplace": "El Paso, Texas, USA",
+    "promotion": "172"
+  },
+  {
+    "gimmick": "Sami Zayn",
+    "birthplace": "Laval, Quebec, Canada",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Sting",
+    "birthplace": "Omaha, Nebraska, USA",
+    "promotion": "191"
+  },
+  {
+    "gimmick": "Chris Benoit",
+    "birthplace": "Montreal, Quebec, Canada",
+    "promotion": "175"
+  },
+  {
+    "gimmick": "Will Ospreay",
+    "birthplace": "Rainham, Essex, England, UK",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Mick Foley",
+    "birthplace": "Bloomington, Indiana, USA",
+    "promotion": "188"
+  },
+  {
+    "gimmick": "Paul Wight",
+    "birthplace": "Aiken, South Carolina, USA",
+    "promotion": "213"
+  },
+  {
+    "gimmick": "Great Khali",
+    "birthplace": "Dhirana, Himachal Pradesh, Indien",
+    "promotion": "216"
+  },
+  {
+    "gimmick": "Nic Nemeth",
+    "birthplace": "Cleveland, Ohio, USA",
+    "promotion": "183"
+  },
+  {
+    "gimmick": "Matt Hardy",
+    "birthplace": "Cameron, North Carolina, USA",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Sheamus",
+    "birthplace": "Dublin, Ireland",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "Johnny TV",
+    "birthplace": "Palos Verdes, California, USA",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Shinsuke Nakamura",
+    "birthplace": "Mineyama, Kyoto, Japan",
+    "promotion": "188"
+  },
+  {
+    "gimmick": "Drew McIntyre",
+    "birthplace": "Ayr, Scotland, UK",
+    "promotion": "196"
+  },
+  {
+    "gimmick": "Hiroshi Tanahashi",
+    "birthplace": "Ogaki, Gifu, Japan",
+    "promotion": "181"
+  },
+  {
+    "gimmick": "Bray Wyatt",
+    "birthplace": "Brooksville, Florida, USA",
+    "promotion": "190"
+  },
+  {
+    "gimmick": "Gunther",
+    "birthplace": "Wien, Österreich",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "Kofi Kingston",
+    "birthplace": "Kumasi, Ashanti-Region, Ghana",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Mark Henry",
+    "birthplace": "Silsbee, Texas, USA",
+    "promotion": "190"
+  },
+  {
+    "gimmick": "Goldberg",
+    "birthplace": "Tulsa, Oklahoma, USA",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "PAC",
+    "birthplace": "Newcastle upon Tyne, Tyne and Wear, England, UK",
+    "promotion": "172"
+  },
+  {
+    "gimmick": "Bobby Lashley",
+    "birthplace": "Kansas City, Missouri, USA",
+    "promotion": "190"
+  },
+  {
+    "gimmick": "Finn Balor",
+    "birthplace": "Bray, County Wicklow, Ireland",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "Zack Sabre Jr.",
+    "birthplace": "Isle of Sheppey, Kent, England, UK",
+    "promotion": "183"
+  },
+  {
+    "gimmick": "Becky Lynch",
+    "birthplace": "Dublin, Ireland",
+    "promotion": "168"
+  },
+  {
+    "gimmick": "Dustin Rhodes",
+    "birthplace": "Austin, Texas, USA",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "Paul Heyman",
+    "birthplace": "Scarsdale, New York, USA",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "Charlotte Flair",
+    "birthplace": "Charlotte, North Carolina, USA",
+    "promotion": "178"
+  },
+  {
+    "gimmick": "Mercedes Mone",
+    "birthplace": "Fairfield, California, USA",
+    "promotion": "164"
+  },
+  {
+    "gimmick": "MVP",
+    "birthplace": "Miami, Florida, USA",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "Asuka",
+    "birthplace": "Osaka, Japan",
+    "promotion": "160"
+  },
+  {
+    "gimmick": "Adam Cole",
+    "birthplace": "Lancaster, Pennsylvania, USA",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "William Regal",
+    "birthplace": "Codsall Wood, Staffordshire, England, UK",
+    "promotion": "187"
+  },
+  {
+    "gimmick": "Rob Van Dam",
+    "birthplace": "Battle Creek, Michigan, USA",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Kenta Kobashi",
+    "birthplace": "Fukuchiyama, Kyoto, Japan",
+    "promotion": "186"
+  },
+  {
+    "gimmick": "Booker T",
+    "birthplace": "Plain Dealing, Louisiana, USA",
+    "promotion": "190"
+  },
+  {
+    "gimmick": "John Bradshaw Layfield",
+    "birthplace": "Athens, Texas, USA",
+    "promotion": "195"
+  },
+  {
+    "gimmick": "R-Truth",
+    "birthplace": "Charlotte, North Carolina, USA",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Adam Page",
+    "birthplace": "Aaron's Creek, Virginia, USA",
+    "promotion": "182"
+  },
+  {
+    "gimmick": "Ricochet",
+    "birthplace": "Alton, Illinois, USA",
+    "promotion": "175"
+  },
+  {
+    "gimmick": "Christopher Daniels",
+    "birthplace": "Kalamazoo, Michigan, USA",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "Natalya",
+    "birthplace": "Calgary, Alberta, Canada",
+    "promotion": "165"
+  },
+  {
+    "gimmick": "Chris Hero",
+    "birthplace": "Dayton, Ohio, USA",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "Kota Ibushi",
+    "birthplace": "Kagoshima, Japan",
+    "promotion": "181"
+  },
+  {
+    "gimmick": "Jake Hager",
+    "birthplace": "Perry, Oklahoma, USA",
+    "promotion": "193"
+  },
+  {
+    "gimmick": "Shelton Benjamin",
+    "birthplace": "Orangeburg, South Carolina, USA",
+    "promotion": "188"
+  },
+  {
+    "gimmick": "Tetsuya Naito",
+    "birthplace": "Tokyo, Japan",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "Bayley",
+    "birthplace": "Newark, California, USA",
+    "promotion": "170"
+  },
+  {
+    "gimmick": "Jushin Thunder Liger",
+    "birthplace": "Hiroshima, Japan",
+    "promotion": "170"
+  },
+  {
+    "gimmick": "Tomohiro Ishii",
+    "birthplace": "Kawasaki, Kanagawa, Japan",
+    "promotion": "170"
+  },
+  {
+    "gimmick": "Malakai Black",
+    "birthplace": "Alkmaar, Nordholland, Niederlande",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "MJF",
+    "birthplace": "New York, USA",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "Vince McMahon",
+    "birthplace": "Pinehurst, North Carolina, USA",
+    "promotion": "187"
+  },
+  {
+    "gimmick": "Matt Sydal",
+    "birthplace": "St. Louis, Missouri, USA",
+    "promotion": "175"
+  },
+  {
+    "gimmick": "Baron Corbin",
+    "birthplace": "Lenexa, Kansas, USA",
+    "promotion": "198"
+  },
+  {
+    "gimmick": "Minoru Suzuki",
+    "birthplace": "Yokohama, Kanagawa, Japan",
+    "promotion": "178"
+  },
+  {
+    "gimmick": "Finlay",
+    "birthplace": "Greenisland, Carrickfergus, Northern Ireland, UK",
+    "promotion": "178"
+  },
+  {
+    "gimmick": "Trish Stratus",
+    "birthplace": "Richmond Hill, Ontario, Canada",
+    "promotion": "162"
+  },
+  {
+    "gimmick": "Mr. Anderson",
+    "birthplace": "Wisconsin Rapids, Wisconsin, USA",
+    "promotion": "188"
+  },
+  {
+    "gimmick": "Matt Cardona",
+    "birthplace": "North Merrick, New York, USA",
+    "promotion": "185"
+  },
+  {
+    "gimmick": "Kevin Nash",
+    "birthplace": "Detroit, Michigan, USA",
+    "promotion": "211"
+  },
+  {
+    "gimmick": "Santino Marella",
+    "birthplace": "Mississauga, Ontario, Canada",
+    "promotion": "178"
+  },
+  {
+    "gimmick": "Randy Savage",
+    "birthplace": "Columbus, Ohio, USA",
+    "promotion": "186"
+  },
+  {
+    "gimmick": "Eddie Kingston",
+    "birthplace": "Yonkers, New York, USA",
+    "promotion": "180"
+  },
+  {
+    "gimmick": "KENTA",
+    "birthplace": "Soka, Saitama, Japan",
+    "promotion": "174"
+  },
+  {
+    "gimmick": "Alberto El Patron",
+    "birthplace": "San Luis Potosi, Mexiko",
+    "promotion": "197"
+  },
+  {
+    "gimmick": "Roderick Strong",
+    "birthplace": "Eau Claire, Wisconsin, USA",
+    "promotion": "178"
+  },
+  {
+    "gimmick": "Miro",
+    "birthplace": "Plovdiv, Bulgarien",
+    "promotion": "183"
+  }
+]
