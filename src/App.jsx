@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import wrestlerData from './wrestlerData.json';
 import Wrestlers from './Wrestlers';
+
 function App() {
   const [data, setData] = useState([]);
 
@@ -17,6 +18,7 @@ function App() {
         <h2 className='text-1xl ml-10'>Promotions</h2>
         <h2 className='text-1xl ml-10'>About</h2>
       </header>
+      
 
     </div>
   );
