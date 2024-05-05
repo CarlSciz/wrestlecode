@@ -1,14 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import wrestlerData from './wrestlerData.json';
 import Wrestlers from './Wrestlers';
 
 function App() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    setData(wrestlerData);
-  }, []);
 
   return (
     <div className='min-h-screen flex flex-col'>
@@ -18,8 +13,10 @@ function App() {
         <h2 className='text-1xl ml-10'>Promotions</h2>
         <h2 className='text-1xl ml-10'>About</h2>
       </header>
-      
-
+      <div className="mt-24 p-4">
+        <h3>Main Page</h3>
+        <p>This is where content for the main page lives.</p>
+      </div>
     </div>
   );
 }
