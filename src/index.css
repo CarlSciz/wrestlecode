@@ -7,14 +7,21 @@
   100% { opacity: 1; }
 }
 
+@layer base {
+  @font-face {
+    font-family: 'Wrestlemania';
+    src: url('./assets/WRESTLEMANIA.ttf');
+  }
+
+  @font-face {
+    font-family: 'Tna';
+    src: url('./assets/TnaFont.ttf');
+  }
+}
 
 body {
   background-color: #547aaa;
 }
-
-@layer base {
-  @font-face {
-    font-family: 'Wrestlemania';
-    src: url('./assets/WRESTLEMANIA.ttf'); 
-  }
+.font-tna {
+  font-family: 'Tna', sans-serif; 
 }
