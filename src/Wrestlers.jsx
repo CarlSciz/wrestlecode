@@ -17,16 +17,22 @@ function Wrestlers() {
         <h2 className='text-1xl ml-10 font-tna'><Link to = "/promotion">Promotions</Link></h2>
         <h2 className='text-1xl ml-10 font-tna'><Link to = "/about">About</Link></h2>
       </header>
-            <div className="text-white mt-24">
-                <h2 className="text-3xl font-bold mb-4">Wrestlers</h2>
-                <ul>
-                    {data.map((wrestler, index) => (
-                        <li key={index}>
-                            <strong>{wrestler.gimmick}</strong>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+      <div className="text-white mt-24">
+        <h2 className="text-3xl font-bold mb-4">Top 100 Wrestlers</h2>
+        <div className="grid grid-cols-1 gap-4">
+            {Object.keys(data).map((key, index) => (
+            <div key={index}>
+                <div className="flex justify-between"> 
+                <strong>{data[key].gimmick}</strong>
+                <strong className="ml-4">{data[key].birthplace}</strong>
+                <strong className="ml-4">{data[key].promotion}</strong> 
+                </div>
+                </div>
+                ))}
+                </div>
+                </div>
+
+
         </div>
     );
 }
