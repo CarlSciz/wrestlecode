@@ -390,11 +390,6 @@
     "birthplace": "Calgary, Alberta, Canada"
   },
   {
-    "gimmick": "Jushin Thunder Liger",
-    "href": "https://www.cagematch.net/?id=2&nr=455&gimmick=Jushin+Thunder+Liger",
-    "birthplace": "Hiroshima, Japan"
-  },
-  {
     "gimmick": "Tetsuya Naito",
     "href": "https://www.cagematch.net/?id=2&nr=3776&gimmick=Tetsuya+Naito",
     "birthplace": "Tokyo, Japan"
@@ -403,6 +398,11 @@
     "gimmick": "Bayley",
     "href": "https://www.cagematch.net/?id=2&nr=9089&gimmick=Bayley",
     "birthplace": "Newark, California, USA"
+  },
+  {
+    "gimmick": "Jushin Thunder Liger",
+    "href": "https://www.cagematch.net/?id=2&nr=455&gimmick=Jushin+Thunder+Liger",
+    "birthplace": "Hiroshima, Japan"
   },
   {
     "gimmick": "Tomohiro Ishii",
@@ -440,14 +440,14 @@
     "birthplace": "Yokohama, Kanagawa, Japan"
   },
   {
-    "gimmick": "Mr. Anderson",
-    "href": "https://www.cagematch.net/?id=2&nr=704&gimmick=Mr.+Anderson",
-    "birthplace": "Wisconsin Rapids, Wisconsin, USA"
-  },
-  {
     "gimmick": "Fit Finlay",
     "href": "https://www.cagematch.net/?id=2&nr=154&gimmick=Fit+Finlay",
     "birthplace": "Greenisland, Carrickfergus, Northern Ireland, UK"
+  },
+  {
+    "gimmick": "Mr. Anderson",
+    "href": "https://www.cagematch.net/?id=2&nr=704&gimmick=Mr.+Anderson",
+    "birthplace": "Wisconsin Rapids, Wisconsin, USA"
   },
   {
     "gimmick": "Matt Cardona",
