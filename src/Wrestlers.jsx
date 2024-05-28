@@ -4,10 +4,20 @@ import { Link } from 'react-router-dom';
 
 function Wrestlers() {
     const [data, setData] = useState([]);
+    const [selectedRow, setSelectedRow] = useState(null);
 
     useEffect(() => {
         setData(wrestlerData);
     }, []);
+
+    const moveRowUp = (index) => {
+        if (index === 0) return; // Can't move the first row up
+        const newData = [...data];
+        const temp = newData[index];
+        newData[index] = newData[index - 1];
+        newData[index - 1] = temp;
+        setData(newData);
+    };
 
     return (
         <div className='min-h-screen flex flex-col'>
@@ -20,12 +30,13 @@ function Wrestlers() {
             <div className="text-white mt-24">
                 <h2 className="text-3xl font-bold mb-4">Top 100 Wrestlers</h2>
                 <div className="grid grid-cols-1 gap-4">
-                    {Object.keys(data).map((key, index) => (
+                    {data.map((row, index) => (
                         <div key={index}>
-                            <div className="flex justify-between"> 
-                                <strong><a href={data[key].href} target="_blank">{data[key].gimmick}</a></strong>
-                                <strong className="ml-4">{data[key].birthplace}</strong>
-                                <strong className="ml-4">{data[key].promotion}</strong> 
+                            <div className="flex justify-between items-center"> 
+                                <strong><a href={row.href} target="_blank">{row.gimmick}</a></strong>
+                                <strong className="ml-4">{row.birthplace}</strong>
+                                <strong className="ml-4">{row.promotion}</strong>
+                                <button onClick={() => moveRowUp(index)}>Rank Up</button>
                             </div>
                         </div>
                     ))}
