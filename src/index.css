@@ -25,3 +25,7 @@ body {
 .font-tna {
   font-family: 'Tna', sans-serif; 
 }
+
+.login-modal {
+  padding : 25px;
+}
