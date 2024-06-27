@@ -5,6 +5,7 @@ import About from './about.jsx';
 import Wrestlers from './Wrestlers.jsx';
 import Promotion from './Promotion.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
 import './index.css';
 
 function Main() {
