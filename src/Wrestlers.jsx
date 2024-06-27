@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import wrestlerData from './wrestlerData.json';
+import LoginModal from './loginModal';
 import { Link } from 'react-router-dom';
 
 function Wrestlers() {
@@ -19,6 +20,16 @@ function Wrestlers() {
         setData(newData);
     };
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
+
     return (
         <div className='min-h-screen flex flex-col'>
             <header className='bg-black text-white h-24 flex items-center justify-start fixed top-0 left-0 w-full z-50'>
@@ -26,6 +37,7 @@ function Wrestlers() {
                 <h2 className='text-1xl ml-10 font-tna'> <Link to= "/wrestlers">Wrestlers</Link></h2>
                 <h2 className='text-1xl ml-10 font-tna'><Link to = "/promotion">Promotions</Link></h2>
                 <h2 className='text-1xl ml-10 font-tna'><Link to = "/about">About</Link></h2>
+                <h3 className='text-1xl ml-60 font-tna' onClick={openModal}>Login</h3>
             </header>
             <div className="text-white mt-24">
                 <h2 className="text-3xl font-bold mb-4">Top 100 Wrestlers</h2>
@@ -42,6 +54,7 @@ function Wrestlers() {
                     ))}
                 </div>
             </div>
+            <LoginModal isModalOpen={isModalOpen} closeModal={closeModal} />
         </div>
     );
 }
