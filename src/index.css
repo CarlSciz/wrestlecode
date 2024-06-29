@@ -17,15 +17,21 @@
     font-family: 'Tna';
     src: url('./assets/TnaFont.ttf');
   }
-}
 
-body {
-  background-color: #547aaa;
-}
-.font-tna {
-  font-family: 'Tna', sans-serif; 
-}
+  body {
+    background-color: #547aaa;
+    cursor: url('./assets/champPixel.png'), auto
+  }
 
-.login-modal {
-  padding : 25px;
+  .font-tna {
+    font-family: 'Tna', sans-serif;
+  }
+
+  .login-modal {
+    padding: 25px;
+  }
+
+  .custom-cursor {
+    cursor: pointer;
+  }
 }
