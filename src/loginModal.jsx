@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function LoginModal({ isModalOpen, closeModal }) {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState('');
-  const [isRegisterView, setIsRegisterView] = useState(false); // State to toggle between login and register view
+  const [isRegisterView, setIsRegisterView] = useState(false);
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
 
@@ -25,30 +25,28 @@ function LoginModal({ isModalOpen, closeModal }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const userData = { email, username, password };
+    
     try {
-      const response = await fetch('http://localhost:5000/register', {
-        method: 'POST',
+      const response = await fetch("http://localhost:5001/register", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(userData),
+        body: JSON.stringify({ email, username, password })
       });
-      if (response.ok) {
-        // Handle successful registration
-        alert('Registration successful');
-        closeModal();
-      } else {
-        // Handle errors
-        const errorData = await response.json();
-        alert('Error: ' + errorData.message);
+      
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
       }
+
+      const data = await response.json();
+      console.log(data); // Log response data
+
     } catch (error) {
       console.error('Error:', error);
-      alert('An error occurred. Please try again.');
     }
   };
-
+  
   return (
     <div className={`fixed top-0 left-0 w-full h-full flex items-center justify-center ${isModalOpen ? '' : 'hidden'}`}>
       <div className="absolute bg-black bg-opacity-50 w-full h-full"></div>
@@ -72,6 +70,7 @@ function LoginModal({ isModalOpen, closeModal }) {
                     value={email}
                     onChange={handleEmailChange}
                     placeholder="Enter your email"
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -85,6 +84,7 @@ function LoginModal({ isModalOpen, closeModal }) {
                     value={username}
                     onChange={handleUsernameChange}
                     placeholder="Enter your username"
+                    required
                   />
                 </div>
                 <div className="mb-6">
@@ -99,6 +99,7 @@ function LoginModal({ isModalOpen, closeModal }) {
                       value={password}
                       onChange={handlePasswordChange}
                       placeholder="Enter your password"
+                      required
                     />
                   </div>
                 </div>
@@ -113,7 +114,7 @@ function LoginModal({ isModalOpen, closeModal }) {
                   <label htmlFor="showPassword" className="text-sm text-gray-700 font-bold">Show Password</label>
                 </div>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                  Submit
+                  Register
                 </button>
               </form>
               <br />
@@ -144,6 +145,7 @@ function LoginModal({ isModalOpen, closeModal }) {
                   id="email"
                   type="email"
                   placeholder="Enter your email"
+                  required
                 />
               </div>
               <div className="mb-6">
@@ -158,6 +160,7 @@ function LoginModal({ isModalOpen, closeModal }) {
                     value={password}
                     onChange={handlePasswordChange}
                     placeholder="Enter your password"
+                    required
                   />
                 </div>
               </div>

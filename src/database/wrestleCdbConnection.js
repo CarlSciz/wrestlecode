@@ -2,31 +2,52 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import registerRoute from './routes/register.js';
+import './WrestleUser.js';  // Assuming this is your Mongoose model import
+import cors from 'cors';    // Import the cors middleware
 
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
 
+// Use the CORS middleware
+app.use(cors());
+
+// Body parser middleware
 app.use(bodyParser.json());
 
-async function connectToDatabase() {
+// Connect to MongoDB
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => {
+  console.log("Connected to MongoDB!");
+})
+.catch((err) => {
+  console.error("Error connecting to MongoDB:", err);
+});
+
+// Define your Mongoose User model
+const User = mongoose.model("WrestlerUser");
+
+// Route to handle registration
+app.post("/register", async (req, res) => {
+  const { email, username, password } = req.body;
   try {
-    await mongoose.connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+    await User.create({
+      email,
+      username,
+      password,
     });
-    console.log('Connected to MongoDB');
+    res.json({ status: "ok" });  // Send JSON response
   } catch (error) {
-    console.error('Failed to connect to MongoDB:', error);
+    console.error("Error registering user:", error);
+    res.status(500).json({ status: "error" });  // Send JSON error response
   }
-}
+});
 
-connectToDatabase();
-
-app.use('/api', registerRoute);
-
+// Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
