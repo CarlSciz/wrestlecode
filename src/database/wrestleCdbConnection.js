@@ -2,36 +2,30 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import './WrestleUser.js';  // Assuming this is your Mongoose model import
-import cors from 'cors';    // Import the cors middleware
+import cors from 'cors'; // Import cors package
 
+import './WrestleUser.js'; // Import your mongoose model
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
 
-// Use the CORS middleware
-app.use(cors());
+// Middleware
+app.use(bodyParser.json()); // Parse JSON request bodies
+app.use(cors()); // Enable CORS for all routes
 
-// Body parser middleware
-app.use(bodyParser.json());
-
-// Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 .then(() => {
-  console.log("Connected to MongoDB!");
+  console.log("Connected to Mongo Database!");
 })
-.catch((err) => {
-  console.error("Error connecting to MongoDB:", err);
-});
+.catch((e) => console.log(e));
 
-// Define your Mongoose User model
 const User = mongoose.model("WrestlerUser");
 
-// Route to handle registration
+// Route for handling registration
 app.post("/register", async (req, res) => {
   const { email, username, password } = req.body;
   try {
@@ -40,14 +34,13 @@ app.post("/register", async (req, res) => {
       username,
       password,
     });
-    res.json({ status: "ok" });  // Send JSON response
+    res.send({ status: "ok" });
   } catch (error) {
-    console.error("Error registering user:", error);
-    res.status(500).json({ status: "error" });  // Send JSON error response
+    res.send({ status: "error" });
   }
 });
 
-// Start the server
+// Start server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
