@@ -4,7 +4,6 @@ function LoginModal({ isModalOpen, closeModal, setUser }) {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState('');
   const [isRegisterView, setIsRegisterView] = useState(false);
-  const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [registrationStatus, setRegistrationStatus] = useState('');
   const [loginStatus, setLoginStatus] = useState('');
@@ -24,10 +23,6 @@ function LoginModal({ isModalOpen, closeModal, setUser }) {
     setPassword(e.target.value);
   };
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
   };
@@ -40,12 +35,12 @@ function LoginModal({ isModalOpen, closeModal, setUser }) {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/register", {
+      const response = await fetch("http://localhost:5001/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, username, password }),
+        body: JSON.stringify({ username, password }),
       });
 
       if (!response.ok) {
@@ -68,12 +63,12 @@ function LoginModal({ isModalOpen, closeModal, setUser }) {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/login", {
+      const response = await fetch("http://localhost:5001/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ username, password }),
       });
 
       if (!response.ok) {
@@ -94,7 +89,7 @@ function LoginModal({ isModalOpen, closeModal, setUser }) {
       console.error('Error:', error);
     }
   };
-
+  
   return (
     <>
       {registrationStatus && (
@@ -118,20 +113,6 @@ function LoginModal({ isModalOpen, closeModal, setUser }) {
               <>
                 <h2 className="text-2xl mb-4">Register</h2>
                 <form onSubmit={handleRegisterSubmit}>
-                  <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                      Email
-                    </label>
-                    <input
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      id="email"
-                      type="email"
-                      value={email}
-                      onChange={handleEmailChange}
-                      placeholder="Enter your email"
-                      required
-                    />
-                  </div>
                   <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
                       Username
@@ -186,16 +167,16 @@ function LoginModal({ isModalOpen, closeModal, setUser }) {
                 <h2 className="text-2xl mb-4">Login</h2>
                 <form onSubmit={handleLoginSubmit}>
                   <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                      Email
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
+                      Username
                     </label>
                     <input
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      id="email"
-                      type="email"
-                      value={email}
-                      onChange={handleEmailChange}
-                      placeholder="Enter your email"
+                      id="username"
+                      type="text"
+                      value={username}
+                      onChange={handleUsernameChange}
+                      placeholder="Enter your username"
                       required
                     />
                   </div>
@@ -231,7 +212,7 @@ function LoginModal({ isModalOpen, closeModal, setUser }) {
                 </form>
                 <br />
                 <button className="mt-4 text-blue-500 hover:text-blue-700" onClick={toggleView}>
-                  Don't have an account?
+                  Don't have an account? Register here
                 </button>
               </>
             )}
