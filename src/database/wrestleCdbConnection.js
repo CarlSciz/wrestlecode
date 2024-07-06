@@ -2,24 +2,24 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import cors from 'cors'; // Import cors package
+import cors from 'cors';
 
-import './WrestleUser.js'; // Import your mongoose model
+import './WrestleUser.js'; // Assuming this file contains your User schema/model
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 // Middleware
-app.use(bodyParser.json()); // Parse JSON request bodies
-app.use(cors()); // Enable CORS for all routes
+app.use(bodyParser.json());
+app.use(cors());
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 .then(() => {
-  console.log("Connected to Mongo Database!");
+  console.log("Connected to MongoDB!");
 })
 .catch((e) => console.log(e));
 
@@ -32,11 +32,28 @@ app.post("/register", async (req, res) => {
     await User.create({
       email,
       username,
-      password,
+      password, // Store plain-text password for now (not recommended for production)
     });
-    res.send({ status: "ok" });
+    res.json({ status: "ok" });
   } catch (error) {
-    res.send({ status: "error" });
+    console.error("Registration error:", error);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+// Route for handling login
+app.post("/login", async (req, res) => {
+  const { username, password } = req.body; 
+  try {
+    const user = await User.findOne({ username }); 
+    if (!user || user.password !== password) { // Compare plain-text passwords (not secure for production)
+      return res.status(401).json({ error: "Invalid credentials" });
+    }
+    // If login is successful, send a success response
+    res.json({ message: "Login successful", username: user.username });
+  } catch (error) {
+    console.error("Login error:", error);
+    res.status(500).json({ error: "Server error" });
   }
 });
 
